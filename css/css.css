@@ -1,0 +1,303 @@
+img{
+    max-width: 100%;
+}
+
+#wrapper {
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.904);
+    /* position: relative; */
+}
+
+h2{
+    text-align: center;
+    font-family: 'Megrim', cursive;
+    font-size: 3em;
+}
+
+/*home*/
+
+#home h1{
+    position: absolute;
+    z-index: 100;
+}
+
+#home .video-wrap {
+    position: relative;
+    width: 98.7vw;
+    z-index: 0;
+}
+
+#home video{
+    width: 100%;
+    z-index: 0;
+}
+
+#home p{
+    z-index: 100;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+
+}
+
+/*gnavi*/
+
+nav {
+    text-align: center;
+}
+
+nav a{
+    color: #fff;
+    font-family: 'Megrim', cursive;
+    font-size: 2.5em;
+}
+
+/*menu*/
+.menu{
+    height: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 10000;
+    position: fixed;
+}
+.menu__line{
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: absolute;
+    transition:transform .3s;
+    width: 100%;
+}
+.menu__line--center{
+    top: 9px;
+}
+.menu__line--bottom{
+    bottom: 0;
+}
+.menu__line--top.active{
+    top: 8px;
+    transform: rotate(45deg);
+}
+.menu__line--center.active{
+    transform:scaleX(0);
+}
+.menu__line--bottom.active{
+    bottom: 10px;
+    transform: rotate(135deg);
+}
+
+/*gnav*/
+.gnav{
+    background: rgba(0,0,0,0.8);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+.gnav__wrap{
+    align-items:center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.gnav__menu__item{
+    margin: 40px 0;
+}
+.gnav__menu__item a{
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 40px;
+    text-decoration: none;
+    transition: .5s;
+}
+.gnav__menu__item a:hover{
+    color: #666;
+}
+
+.hero{
+    background-position: 50% 50%;
+}
+
+/*story*/
+
+#story h2{
+    margin: 6% 0 2% 0;
+}
+
+#youtube{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/*character*/
+
+#character{
+    height: 100vh;
+}
+
+#character h2{
+    margin: 10% 0 8% 0;
+}
+
+.swiper-slide{
+    width: 80%;
+    position: relative;
+}
+
+.swiper-slide h3{
+    margin-bottom: 5%;
+    width: 50%;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.swiper-slide p{
+    clear: both;
+    width: 40%;
+    margin-left: 5%;
+    position: absolute;
+}
+
+.swiper-slide img{
+    float: right;
+    margin-right: 10%;
+}
+
+footer{
+    text-align: center;
+}
+
+
+/*music*/
+
+p.soundBtn {
+	width: 75px;
+	height: 24px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+    background: url(../image/sound1_03.png) top left no-repeat;
+    color: #fff;
+    position: fixed;
+    z-index: 1000;
+}
+p.clicked {
+	background: url(../image/sound1_05.png) bottom left no-repeat;
+}
+
+p.soundBtn2 {
+	width: 75px;
+    height: 24px;
+    margin-left: 75px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
+    background: url(../image/sound1_03.png) top left no-repeat;
+    color: #fff;
+    position: fixed;
+    z-index: 1000;
+}
+p.clicked2 {
+	background: url(../image/sound1_05.png) bottom left no-repeat;
+}
+
+.mynintendostore{
+    position: fixed;
+    z-index: 1000;
+    bottom: -1%;
+    right: 0%;
+}
+
+@media screen and (max-width:480px){
+
+
+    /*home*/
+    #home{
+        width: 100vw;
+        height: 100vh;
+
+    }
+
+    #home .video-wrap{
+        background-image: url(../image/background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #home h1{
+        z-index: 10;
+        margin: 0 auto;
+    }
+
+
+    #home video{
+        display: none;
+    }
+
+    #home p{
+        bottom: 5%;
+        z-index: 10;
+    }
+
+    .mynintendostore{
+        width: 100vw;
+        text-align: center  ;
+    }
+
+    /*story*/
+
+    #story{
+        margin-bottom: 60%;
+    }
+
+    #story h2{
+        margin-top: 10%;
+    }
+
+    #youtube {
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 0px;
+        position: relative;
+      }
+      
+      #youtube iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide img{
+        clear: both;
+        margin: 0;
+      }
+
+    .swiper-slide h3{
+        width: 100vw;
+        margin-top: 10%;
+    }
+
+    .swiper-slide p{
+        width: 90%;
+        padding: 15% 0;
+        margin: 0 auto;
+        position: static;
+      }
+
+    }
+    

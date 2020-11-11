@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Xenoblade2</title>
+    <link rel="stylesheet" type="text/css" href="css/css.css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" />
+    <script src="js/jQuery-3.4.1.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--menu-->
+        <a class="menu">
+            <span class="menu__line menu__line--top"></span>
+            <span class="menu__line menu__line--center"></span>
+            <span class="menu__line menu__line--bottom"></span>
+        </a>
+        <nav class="gnav">
+            <div class="gnav__wrap">
+                <ul class="gnav__menu">
+                    <li class="gnav__menu__item"><a href="#home"><img src="image/titlemenu.png" alt="MENU"></a></li>
+                    <li class="gnav__menu__item"><a href="#home">HOME</a></li>
+                    <li class="gnav__menu__item"><a href="#story">STORY</a></li>
+                    <li class="gnav__menu__item"><a href="#character">CHARACTER</a></li>
+                </ul>
+            </div><!--gnav-wrap-->
+        </nav>
+
+        <div id="music1">
+            <p class="soundBtn clicked">再生・停止</p>
+            <audio id="overSound" preload="auto">
+                <source src="image/01_Counterattack.mp3" type="audio/mp3">
+                ※お使いの環境では再生できません。
+            </audio>
+        </div><!--music1-->
+        <div id="music2">
+            <p class="soundBtn2 clicked2">再生・停止</p>
+            <audio id="overSound2" preload="auto">
+                <source src="image/19_DriftingSoul.mp3" type="audio/mp3">
+                ※お使いの環境では再生できません。
+            </audio>
+        </div><!--music2-->
+        <!--home-->
+        <div id="home">
+            <h1><img src="image/titleindex.png" alt="Xenoblade2"></h1>
+            <div class="video-wrap">
+            <video src="image/video.mp4" autoplay loop muted>
+            </video>
+            </div><!--video-wrap-->
+            <p><img src="image/catchcopy.png" alt="行こう！楽園へ！"></p>
+        <a href="https://store.nintendo.co.jp/item/HAC_P_ADENA.html?c_param=bf6869548b23268aee94eed243ff85a4" target="_blank" class="mynintendostore"><img src="image/banner.png" alt="mynintendostore"></a>
+
+        </div><!--/home-->
+        <!--story-->
+        <div id="story">
+            <h2>STORY</h2>
+            <div id="youtube">
+                <iframe width="890" height="500" src="https://www.youtube.com/embed/aDeE8Gz1Ybo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div><!--/youtube-->
+        </div><!--/story-->
+        <!--character-->
+        <div id="character">
+            <h2>CHARACTER</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <section id="rekusu">
+                        <ul>
+                            <li><h3>レックス</h3></li>
+                            <li><img src="image/rekusu.jpg" alt="レックス"></li>
+                            <li><p>サルベージャーを生業としている活発な少年。15歳。<br>
+                                性格は前向きかつ行動派。困っている人は放っておけないお人好しで、たとえ敵でも動機を察すれば説得すら試みるほど。
+                                若くしてサルベージャーとして生計を立てていることから世情はそれなりに把握している。
+                                幼少のころから楽園を信じている。</p></li>
+                        </ul>
+                    </section><!--rekusu-->
+                </div>
+                <div class="swiper-slide">
+                    <section id="homura">
+                        <ul>
+                            <li><h3>ホムラ</h3></li>
+                            <li><img src="image/homura.jpg" alt="ホムラ"></li>
+                            <li><p>レックスのパートナーとなるブレイドの少女。<br>
+                                翠玉色のコアクリスタルを持つ「天の聖杯」と呼ばれる伝説のブレイドであり、
+                                その力は他のブレイドと比べて圧倒的なもので、覚醒後は多くの勢力に狙われる事となる。
+                                穏やかで心優しい性格。押しが弱いと思われがちだが、
+                                仲間のために我が身を犠牲にすることも厭わない芯の強さを持つ。</p></li>
+                        </ul>
+                    </section><!--homura-->
+                </div>
+                <div class="swiper-slide">
+                    <section id="hikari">
+                        <ul>
+                            <li><h3>ヒカリ</h3></li>
+                            <li><img src="image/hikari.jpg" alt="ヒカリ"></li>
+                            <li><p>ホムラのもうひとつの姿。</p></li>
+                        </ul>
+                    </section><!--hikari-->
+                </div>
+                <div class="swiper-slide">
+                    <section id="nia">
+                        <ul>
+                            <li><h3>ニア／ビャッコ</h3></li>
+                            <li><img src="image/nia.jpg" alt="ニア"></li>
+                            <li><p>獣のような耳が特徴の少女。さばさばした性格でパーティのツッコミ役。<br>
+                                年が近いレックスとは馬が合う喧嘩友達。
+                                ビャッコという白い虎のような姿をしたブレイドが相棒。
+                                ビャッコからは「お嬢様」と呼ばれている。バトル中の掛け声や好みの料理が魚料理などネコっぽい一面が多い。</p></li>
+                        </ul>
+                    </section><!--nia-->
+                </div>
+                <div class="swiper-slide">
+                    <section id="tora">
+                        <ul>
+                            <li><h3>トラ／ハナ</h3></li>
+                            <li><img src="image/tora.jpg" alt="トラ"></li>
+                            <li><p>ドライバーに憧れる、メカ好きのノポン族の少年。<br>
+                                好奇心旺盛でパーティのムードメーカー的存在。
+                                自身にはドライバーの適性がなく、コアとの同調に失敗した際には、三日三晩鼻血が止まらなかった。
+                                それでも、ドライバーになりたいという思いを諦め切れず、持ち前のメカニックの強さを生かして、祖父の代から三代かけて人工ブレイド「ハナ」を完成させた。
+                                ハナはトラのことを「ご主人」と呼ぶ。トラに対しては全幅の信頼を寄せているが、たまに厳しい指摘を言うことがある。感情表現が豊かで、
+                                言動がどことなく妹っぽいため、仲間内からは可愛がられている。
+                                </p></li>
+                        </ul>
+                </div>
+                <div class="swiper-slide">
+                    <section id="merefu">
+                        <ul>
+                            <li><h3>メレフ／カグツチ</h3></li>
+                            <li><img src="image/merefu.jpg" alt="メレフ"></li>
+                            <li><p>スペルビア帝国の特別執権官。軍服に身を包んだ男装の麗人。「炎の輝公子」と呼ばれる、帝国のドライバー。<br>
+                                性格は良く言えば実直で生真面目だが、かなりの負けず嫌いで些細なことで意地を張り、裏目に出ることが多々ある。
+                                メレフのブレイドであるカグツチは、メレフの秘書として的確なアドバイスで補佐する女性。
+                                武器は鞭のように伸びる2本のサーベルで青い炎を操ることができる。「スペルビアの宝珠」と呼ばれる特別なブレイド。
+                                </p></li>
+                        </ul>
+                    </section><!--merefu-->
+                </div>
+                <div class="swiper-slide">
+                    <section id="jiku">
+                        <ul>
+                            <li><h3>ジーク／サイナ</h3></li>
+                            <li><img src="image/jiku.jpg" alt="ジーク"></li>
+                            <li><p>「雷轟のジーク」の二つ名を持つ流れ者のドライバー。<br>
+                                レックスのことは「ボン」と呼んでおり、純粋で前向きな性格を買っているが、同時に危ういところもあるためそれを助けてやるのが大人である自分の役目だと認識している。
+                                ブレイドのサイカは、チャキチャキした性格でジークの世話を甲斐甲斐しく焼いている。ジークとは10年以上の付き合いで王子と呼んでいる。互いに絶対の信頼を置いており、ジークの一挙手一投足と完全に合わせた動きを見せる。
+                                </p></li>
+                        </ul>
+                    </section><!--jiku-->
+                </div>
+                <div class="swiper-slide">
+                    <section id="sin">
+                        <ul>
+                            <li><h3>シン</h3></li>
+                            <li><img src="image/sin.jpg" alt="シン"></li>
+                            <li><p>イーラの首魁。仮面をつけた剣士。<br>
+                                冷静な性格だが、目的のためには手段を選ばない苛烈さを持つ。
+                                かつて古王国イーラで「イーラの秘宝」と呼ばれた最強のブレイド。当時は無用な争いは好まない穏やかな性格だった。当時の仲間曰く、誰よりも強く、誰よりも優しく、誰よりも戦いが嫌いだった。
+                                </p></li>
+                        </ul>
+                    </section><!--sin-->
+                </div>
+                <div class="swiper-slide">
+                    <section id="metu">
+                        <ul>
+                            <li><h3>メツ</h3></li>
+                            <li><img src="image/metu.jpg" alt="メツ"></li>
+                            <li><p>イーラのナンバー2。<br>
+                                大柄で言葉遣いは荒々しく敵に対しては容赦しないが、仲間に対しては寛大で兄貴肌な一面もある。シンの意向を尊重し命令には従うため、シンからの信頼は厚い。ドライバーとしての実力も高い。レックスのことは初対面から一貫して「小僧」と呼ぶ。
+                                ホムラと同じく「天の聖杯」のブレイド。
+                                </p></li>
+                        </ul>
+                    </section><!--metu-->
+                </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+        </div><!--character-->
+
+        <footer>
+            <p>2020&copy;hal.make</p>
+        </footer>
+    </div><!--wrapper-->
+    <!--menuscript-->
+    <script>
+        $('.menu').on('click',function(){
+            $('.menu__line').toggleClass('active');
+            $('.gnav').fadeToggle();
+        });
+    </script>
+    <!--characterscript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+        <script>
+                var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            speed: 400,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+    </script>
+    <!--audioscript-->
+    <script>
+        $(function(){
+            $(".soundBtn").click(function(){
+                if($(this).hasClass("clicked")){
+                    $(this).removeClass("clicked");
+                    document.getElementById("overSound").currentTime = 0; //再生秒数を 0 にセット
+                    document.getElementById("overSound").play();
+                }else{
+                    $(this).addClass("clicked");
+                    document.getElementById("overSound").pause();
+                }
+            });
+        });
+    </script>
+        <script>
+            $(function(){
+                $(".soundBtn2").click(function(){
+                    if($(this).hasClass("clicked2")){
+                        $(this).removeClass("clicked2");
+                        document.getElementById("overSound2").currentTime = 0; //再生秒数を 0 にセット
+                        document.getElementById("overSound2").play();
+                    }else{
+                        $(this).addClass("clicked2");
+                        document.getElementById("overSound2").pause();
+                    }
+                });
+            });
+        </script>
+</body>
+</html>
